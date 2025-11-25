@@ -40,6 +40,12 @@ console.log(s.split(', '));
 
 //Arrays - variables that hold multiple values//
 const numbers = new Array(1,2,3,4,5);
+console.log(numbers);
 /* multi line comment*/
 const fruits = ['apples', 'oranges', 'pears', 10, true];
+fruits[3] = 'grapes';
+fruits.push('mangos');
+fruits.unshift('strawberries');
 console.log(fruits);
+
+
