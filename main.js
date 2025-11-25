@@ -17,3 +17,12 @@ const age = 26; //Number
 const rating = 4.5; //Number
 const isStudent = true; //Boolean
 const x = null; //Null
+const y = undefined; //Undefined
+let z; //Undefined
+console.log(typeof z);
+
+//Concatenation//
+console.log('My name is ' + name + ' and I am ' + age);
+
+//Template Strings//
+console.log(`My name is ${name} and I am ${age}`);
