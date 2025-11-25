@@ -16,5 +16,12 @@ msg.innerHTML = 'Please Enter All Fields Please';
 setTimeout(() => msg.remove(), 3000);
 } else {
     console.log('success');
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(`${nameInput.value}: ${emailInput.value}`));
+    userList.appendChild(li);
+
+    //Clear
+    nameInput.value = ' ';
+    emailInput.value = ' ';
 }
 }
