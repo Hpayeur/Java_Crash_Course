@@ -26,3 +26,20 @@ console.log('My name is ' + name + ' and I am ' + age);
 
 //Template Strings//
 console.log(`My name is ${name} and I am ${age}`);
+const hello = `My name is ${name} and I am ${age}`;
+console.log(hello);
+
+//String properties and methods//
+const s = 'Hello World';
+console.log(s.length);
+console.log(s.toUpperCase());
+console.log(s.substring(0, 5).toLowerCase());
+console.log(s.split(''));
+const s= 'technology, computers, it, code';
+console.log(s.split(', '));
+
+//Arrays - variables that hold multiple values//
+const numbers = new Array(1,2,3,4,5);
+/* multi line comment*/
+const fruits = ['apples', 'oranges', 'pears', 10, true];
+console.log(fruits);
