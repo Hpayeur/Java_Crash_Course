@@ -46,6 +46,45 @@ const fruits = ['apples', 'oranges', 'pears', 10, true];
 fruits[3] = 'grapes';
 fruits.push('mangos');
 fruits.unshift('strawberries');
+fruits.pop();
+console.log(Array.isArray(fruits));
+console.log(fruits.indexOf('oranges'));
 console.log(fruits);
 
-
+//Object Literals//
+const person = {
+    firstName: 'Ember',
+    lastName: 'Smith',
+    age: 26,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 Main St',
+        city: 'Boston',
+        state: 'MA'
+    }
+};
+console.log(person.firstName, person.lastName);
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+const { firstName, lastName, address: { city } } = person;
+console.log(firstName, city);
+person.email = 'Ember@example.com';
+console.log(person);
+//Arrays of Objects//
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    }
+       {
+        id: 2,
+        text: 'Meet up for lunch',
+        isCompleted: true
+    }
+       {
+        id: 3,
+        text: 'Dentist appointment',
+        isCompleted: true
+    }
+]
