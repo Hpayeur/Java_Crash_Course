@@ -1,5 +1,20 @@
-console.log(Window);
-window.alert(1);
-//Single Element Selector
-console.log(document.getElementById('my-Form'));
-console.log(document.querySelector('container'));
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const   msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {e.preventDefault();
+    console.log(nameInput.value)
+
+if(nameInput.value === '' || emailInput.value === '') {
+    msg.classList.add('error');
+msg.innerHTML = 'Please Enter All Fields Please';
+
+setTimeout(() => msg.remove(), 3000);
+} else {
+    console.log('success');
+}
+}
