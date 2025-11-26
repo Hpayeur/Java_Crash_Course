@@ -42,11 +42,11 @@ age = 31;
 
 
 // Data Types= String, Number, Boolean, null, undefined
-const name = 'Brad';
-const age = 37;
+let name = 'Brad';
+ age = 37;
 const rating = 3.5;
 const isCool = true;
-const x = null;
+let x = null;
 const y = undefined;
 let z; // undefined
 console.log(typeof z);
@@ -70,7 +70,7 @@ val = s.split('');
 // Arrays= Store multiple values in a variable
 const numbers = [1,2,3,4,5];
 const fruits = ['apples', 'oranges', 'pears', 'grapes'];
-console.log(numbers, fruit);
+console.log(numbers, fruits);
 console.log(fruits[1]);
 fruits[4] = 'blueberries';
 fruits.push('strawberries');
@@ -159,7 +159,7 @@ const todo1 = todos.filter(function(todo) {
 
 
 //Conditionals
-const x = 30;
+ x = 30;
 
 if(x === 10) {
   console.log('x is 10');
@@ -179,16 +179,16 @@ switch(color) {
   default:  
     console.log('color is not red or blue')
 }
-const z = color === 'red' ? 10 : 20;
+ z = color === 'red' ? 10 : 20;
 
 // Functions
-function greet(greeting = 'Hello', name) {
-  if(!name) {
-    return greeting;
-  } else {
-    return `${greeting} ${name}`;
-  }
-}
+//function greet(greeting = 'Hello', name) {
+//  if(!name) {
+//    return greeting;
+//  } else {
+//    return `${greeting} ${name}`;
+//  }
+//}
 
 // Arrow Functions
 const greet = (greeting = 'Hello', name = 'There') => `${greeting} ${name}`;
@@ -212,25 +212,13 @@ Person.prototype.getFullName = function() {
 }
 
 
-// Instantiate an object from the class
-const person1 = new Person('John', 'Doe', '7-8-80');
-const person2 = new Person('Steve', 'Smith', '8-2-90');
-
-console.log(person2);
-
-// console.log(person1.getBirthYear());
-// console.log(person1.getFullName());
-
-
-
-
-const name = new String('Kevin');
+ name = new String('Kevin');
 console.log(typeof name); 
-const num = new Number(5);
+num = new Number(5);
 console.log(typeof num); 
 
 //Class
-class Person {
+class Person_ClS{
   constructor(firstName, lastName, dob) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -248,8 +236,17 @@ class Person {
   }
 }
 
-const person1 = new Person('John', 'Doe', '7-8-80');
+let person1 = new Person('John', 'Doe', '7-8-80');
 console.log(person1.getBirthYear());
+
+// Instantiate an object from the class
+ person1 = new Person('John', 'Doe', '7-8-80');
+ person2 = new Person('Steve', 'Smith', '8-2-90');
+
+console.log(person2);
+
+// console.log(person1.getBirthYear());
+// console.log(person1.getFullName());
 
 
 // Element Selectors
@@ -285,7 +282,7 @@ btn.addEventListener('click', e => {
 });
 
 // Keyboard Event
-const nameInput = document.querySelector('#name');
+ nameInput = document.querySelector('#name');
 nameInput.addEventListener('input', e => {
   document.querySelector('.container').append(nameInput.value);
 });
