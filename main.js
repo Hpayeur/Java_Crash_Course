@@ -236,12 +236,12 @@ class Person_ClS{
   }
 }
 
-let person1 = new Person('John', 'Doe', '7-8-80');
+let person1 = new Person_ClS('John', 'Doe', '7-8-80');
 console.log(person1.getBirthYear());
 
 // Instantiate an object from the class
- person1 = new Person('John', 'Doe', '7-8-80');
- person2 = new Person('Steve', 'Smith', '8-2-90');
+ person1 = new Person_ClS('John', 'Doe', '7-8-80');
+ person2 = new Person_ClS('Steve', 'Smith', '8-2-90');
 
 console.log(person2);
 
@@ -261,28 +261,28 @@ items.forEach((item) => console.log(item));
 
 
 // Manipulating The Dom
-const ul = document.querySelector('.items');
+//const ul = document.querySelector('.items');
 // ul.remove();
 // ul.lastElementChild.remove();
-ul.firstElementChild.textContent = 'Hello';
-ul.children[1].innerText = 'Brad';
-ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+//ul.firstElementChild.textContent = 'Hello';
+//ul.children[1].innerText = 'Brad';
+//ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
 
-const btn = document.querySelector('.btn');
+//const btn = document.querySelector('.btn');
 
 
 
 // Mouse Events
-btn.addEventListener('click', e => {
-  e.preventDefault();
-  console.log(e.target.className);
-  document.getElementById('my-form').style.background = '#ccc';
-  document.querySelector('body').classList.add('bg-dark');
-  ul.lastElementChild.innerHTML = '<h1>Changed</h1>';
-});
+// btn.addEventListener('click', e => {
+//   e.preventDefault();
+//   console.log(e.target.className);
+//   document.getElementById('my-form').style.background = '#ccc';
+//   document.querySelector('body').classList.add('bg-dark');
+//   ul.lastElementChild.innerHTML = '<h1>Changed</h1>';
+// });
 
-// Keyboard Event
- nameInput = document.querySelector('#name');
-nameInput.addEventListener('input', e => {
-  document.querySelector('.container').append(nameInput.value);
-});
+// // Keyboard Event
+//  nameInput = document.querySelector('#name');
+// nameInput.addEventListener('input', e => {
+//   document.querySelector('.container').append(nameInput.value);
+// });
